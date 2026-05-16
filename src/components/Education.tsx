@@ -1,8 +1,10 @@
 import { education } from '../data/portfolio'
 import { useInView } from '../hooks/useInView'
+import { useLang, t } from '../context/LangContext'
 
 export function Education() {
   const [ref, inView] = useInView<HTMLElement>()
+  const { lang } = useLang()
 
   return (
     <section
@@ -14,19 +16,21 @@ export function Education() {
     >
       <div className="flex items-center gap-4 mb-12">
         <span className="font-mono text-accent text-sm">04.</span>
-        <h2 className="font-display text-2xl md:text-3xl text-text">Education</h2>
+        <h2 className="font-display text-2xl md:text-3xl text-text">
+          {lang === 'en' ? 'Education' : 'Educación'}
+        </h2>
         <div className="flex-1 h-px bg-border" aria-hidden="true" />
       </div>
 
       <div className="space-y-4">
         {education.map((edu) => (
           <div
-            key={edu.institution}
+            key={`${edu.institution}-${edu.period}`}
             className="bg-surface border border-border rounded-lg p-6 hover:border-accent/40 transition-colors duration-200"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
               <div>
-                <h3 className="font-sans font-semibold text-text">{edu.degree}</h3>
+                <h3 className="font-sans font-semibold text-text">{t(edu.degree, lang)}</h3>
                 <p className="font-mono text-sm text-accent mt-1">{edu.institution}</p>
                 <p className="font-mono text-xs text-text-dim mt-1">{edu.location}</p>
               </div>
@@ -34,7 +38,7 @@ export function Education() {
                 <span className="font-mono text-xs text-text-dim">{edu.period}</span>
                 {edu.current && (
                   <span className="font-mono text-xs bg-accent-dim text-accent px-2 py-0.5 rounded-full border border-accent/30">
-                    current
+                    {lang === 'en' ? 'current' : 'actual'}
                   </span>
                 )}
               </div>

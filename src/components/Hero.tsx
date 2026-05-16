@@ -1,12 +1,14 @@
 import { personalInfo } from '../data/portfolio'
+import { useLang, t } from '../context/LangContext'
 
 export function Hero() {
+  const { lang } = useLang()
+
   return (
     <section
       id="about"
       className="min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-6 pt-24 pb-16"
     >
-      {/* Grid background accent */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -22,7 +24,7 @@ export function Hero() {
           className="font-mono text-accent text-sm mb-4 opacity-0-start animate-fade-up"
           style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
         >
-          Hi, my name is
+          {lang === 'en' ? 'Hi, my name is' : 'Hola, mi nombre es'}
         </p>
 
         <h1
@@ -36,17 +38,33 @@ export function Hero() {
           className="font-display text-4xl md:text-6xl text-text-dim mb-8 opacity-0-start animate-fade-up leading-tight"
           style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}
         >
-          {personalInfo.title}.
+          {t(personalInfo.title, lang)}.
         </h2>
 
         <p
           className="max-w-xl text-text-dim text-base md:text-lg leading-relaxed mb-10 opacity-0-start animate-fade-up"
           style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}
         >
-          {personalInfo.summary}
+          {t(personalInfo.summary, lang)}
         </p>
 
-        {/* Contact row */}
+        {/* Stats row */}
+        <div
+          className="flex flex-wrap gap-6 mb-10 opacity-0-start animate-fade-up"
+          style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}
+        >
+          {[
+            { value: '6+', label: lang === 'en' ? 'Years of experience' : 'Años de experiencia' },
+            { value: '6', label: lang === 'en' ? 'Companies' : 'Empresas' },
+            { value: '10+', label: lang === 'en' ? 'Technologies' : 'Tecnologías' },
+          ].map(({ value, label }) => (
+            <div key={label} className="flex flex-col">
+              <span className="font-display text-3xl text-accent">{value}</span>
+              <span className="font-mono text-xs text-text-dim mt-0.5">{label}</span>
+            </div>
+          ))}
+        </div>
+
         <div
           className="flex flex-wrap items-center gap-4 opacity-0-start animate-fade-up"
           style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}
@@ -77,16 +95,8 @@ export function Hero() {
 
           <span className="text-text-dim font-mono text-sm">
             <span className="text-accent">{'// '}</span>
-            {personalInfo.location} · {personalInfo.openTo}
+            {personalInfo.location} · {t(personalInfo.openTo, lang)}
           </span>
-        </div>
-
-        {/* Scroll hint */}
-        <div
-          className="mt-20 flex items-center gap-3 text-text-dim opacity-0-start animate-fade-up"
-          style={{ animationDelay: '700ms', animationFillMode: 'forwards' }}
-        >
-          <div className="w-px h-16 bg-gradient-to-b from-transparent to-border mx-auto" aria-hidden="true" />
         </div>
       </div>
     </section>
