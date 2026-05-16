@@ -61,7 +61,7 @@ export function Navbar() {
 
           <li>
             <a
-              href="mailto:pablolm97@gmail.com"
+              href="#contact"
               className="font-mono text-xs border border-accent text-accent px-4 py-2 rounded hover:bg-accent-dim transition-colors duration-200"
             >
               {lang === 'en' ? 'Contact' : 'Contacto'}
@@ -113,6 +113,15 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setMobileOpen(false)}
+                className="font-mono text-sm border border-accent text-accent px-4 py-2 rounded hover:bg-accent-dim transition-colors duration-200 inline-block"
+              >
+                {lang === 'en' ? 'Contact' : 'Contacto'}
+              </a>
+            </li>
           </ul>
         </div>
       )}

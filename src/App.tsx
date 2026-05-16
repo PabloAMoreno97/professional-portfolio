@@ -5,6 +5,7 @@ import { Clients } from './components/Clients'
 import { Experience } from './components/Experience'
 import { Skills } from './components/Skills'
 import { Education } from './components/Education'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Experience />
         <Skills />
         <Education />
+        <Contact />
       </main>
       <Footer />
     </LangProvider>
