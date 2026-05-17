@@ -29,11 +29,6 @@ npm run dev
 | `npm run format` | Format with Prettier |
 | `npm run typecheck` | TypeScript type check |
 
-## Deploy to Vercel
+## Deployed to Vercel
 
-1. Push this repo to GitHub
-2. Import the repo at [vercel.com/new](https://vercel.com/new)
-3. Vercel auto-detects Vite — click **Deploy**
-4. Your site is live at `your-project.vercel.app`
-
-Optional: Connect a custom domain in Vercel's dashboard.
+This repository is automatically deployed to Vercel using Vite.
