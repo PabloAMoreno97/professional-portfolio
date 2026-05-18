@@ -252,7 +252,7 @@ export const projects: Project[] = [
       es: 'Pipeline batch end-to-end que ingesta precios diarios de acciones desde Alpha Vantage, calcula métricas de análisis (MA, volatilidad, retornos) y las almacena en un schema PostgreSQL de dos capas (raw → analytics). Orquestado con Apache Airflow y expuesto vía API REST.',
     },
     stack: ['Python', 'Apache Airflow', 'FastAPI', 'PostgreSQL', 'Pandas', 'Docker', 'Neon', 'Render'],
-    github: 'https://github.com/pablolm97/etl-financial-pipeline',
+    github: 'https://github.com/PabloAMoreno97/etl-financial-pipeline',
     demo: 'https://etl-financial-api.onrender.com/docs',
   },
 ]
