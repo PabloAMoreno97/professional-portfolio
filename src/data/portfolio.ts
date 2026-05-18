@@ -98,7 +98,7 @@ export const experience: Experience[] = [
   {
     company: 'Sombra',
     role: { en: 'Middle Software Engineer', es: 'Ingeniero de Software Middle' },
-    type: 'Remote · Ukraine',
+    type: 'Remote · United States',
     period: { en: 'Apr 2024 – Dec 2025', es: 'Abr 2024 – Dic 2025' },
     current: false,
     bullets: {
