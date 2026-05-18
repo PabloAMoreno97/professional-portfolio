@@ -15,7 +15,7 @@ export function Education() {
       }`}
     >
       <div className="flex items-center gap-4 mb-12">
-        <span className="font-mono text-accent text-sm">04.</span>
+        <span className="font-mono text-accent text-sm">05.</span>
         <h2 className="font-display text-2xl md:text-3xl text-text">
           {lang === 'en' ? 'Education' : 'Educación'}
         </h2>

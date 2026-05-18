@@ -10,6 +10,7 @@ export function Navbar() {
     { href: '#about',      label: lang === 'en' ? 'About'      : 'Sobre mí' },
     { href: '#experience', label: lang === 'en' ? 'Experience'  : 'Experiencia' },
     { href: '#skills',     label: lang === 'en' ? 'Skills'      : 'Habilidades' },
+    { href: '#projects',   label: lang === 'en' ? 'Projects'    : 'Proyectos' },
     { href: '#education',  label: lang === 'en' ? 'Education'   : 'Educación' },
   ]
 

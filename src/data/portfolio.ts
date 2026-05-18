@@ -232,6 +232,31 @@ export const skillGroups = [
   { label: { en: 'Tools',            es: 'Herramientas'        }, skills: ['Redis', 'Postman', 'Linux', 'Jira', 'Pytest', 'Selenium', 'JWT'] },
 ]
 
+export interface Project {
+  slug: string
+  title: string
+  category: { en: string; es: string }
+  description: { en: string; es: string }
+  stack: string[]
+  github: string
+  demo?: string
+}
+
+export const projects: Project[] = [
+  {
+    slug: 'etl-financial-pipeline',
+    title: 'Financial ETL Pipeline',
+    category: { en: 'Data Engineering', es: 'Ingeniería de Datos' },
+    description: {
+      en: 'End-to-end batch pipeline that ingests daily stock prices from Alpha Vantage, computes analytics metrics (MA, volatility, returns) and stores them in a two-layer PostgreSQL schema (raw → analytics). Orchestrated with Apache Airflow and exposed via a REST API.',
+      es: 'Pipeline batch end-to-end que ingesta precios diarios de acciones desde Alpha Vantage, calcula métricas de análisis (MA, volatilidad, retornos) y las almacena en un schema PostgreSQL de dos capas (raw → analytics). Orquestado con Apache Airflow y expuesto vía API REST.',
+    },
+    stack: ['Python', 'Apache Airflow', 'FastAPI', 'PostgreSQL', 'Pandas', 'Docker', 'Neon', 'Render'],
+    github: 'https://github.com/pablolm97/etl-financial-pipeline',
+    demo: 'https://etl-financial-api.onrender.com/docs',
+  },
+]
+
 export const education = [
   {
     institution: 'Universidad Autónoma de Occidente',
