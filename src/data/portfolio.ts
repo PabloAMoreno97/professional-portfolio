@@ -139,7 +139,7 @@ export const experience: Experience[] = [
         'Utilized Git and Bitbucket following GitFlow practices, tracking progress with Jira in a Scrum framework.',
       ],
       es: [
-        'Desarrollo de integraciones backend y APIs REST en Python (Django, Flask) para importantes instituciones bancarias, cumpliendo estrictos estándares de cumplimiento y seguridad de datos.',
+        'Desarrollo de integraciones backend y APIs REST en Python (Django, Flask) para importantes instituciones bancarias, cumpliendo estrictos estándares regulatorios y de seguridad de datos.',
         'Automatización de flujos operativos con Selenium y Python, incluyendo pipelines de reportes y correos.',
         'Implementación de cobertura de pruebas completa con Pytest y Unittest — crítica en entornos bancarios donde los fallos tienen implicaciones regulatorias.',
         'Diseño de arquitectura de microservicios e integración con bases de datos SQL.',
