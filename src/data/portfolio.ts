@@ -74,18 +74,17 @@ export const experience: Experience[] = [
       en: [
         'Own the full integration delivery cycle: gather and translate client requirements into technical specifications, develop the solution, and deliver to production.',
         'Act as the primary technical point of contact for clients during integration projects, ensuring clear communication and alignment throughout.',
-        'Design and develop integrations between the SaaS platform and enterprise ERP systems for clients in regulated industries, including leading financial institutions.',
+        'Design and develop integrations between the SaaS platform and enterprise ERP systems for clients in regulated industries.',
         'Build data integration pipelines using Python and Pandas for transformation and synchronization across enterprise platforms.',
         'Develop integration APIs using FastAPI and Pydantic, applying strict schema validation and data integrity controls required by regulated environments.',
         'Automate and orchestrate integration workflows using Apache Airflow.',
         'Integrate REST APIs, SQL databases, and structured files (CSV, Parquet) across heterogeneous systems.',
-        'Implement caching and intermediate storage with Redis to improve pipeline reliability.',
         'Deploy and operate services in containerized environments using Kubernetes.',
       ],
       es: [
         'Gestión del ciclo completo de entrega de integraciones: toma de requerimientos con clientes, aterrizaje técnico, desarrollo y entrega a producción.',
         'Punto de contacto técnico principal con clientes durante proyectos de integración, asegurando comunicación clara y alineación en todo momento.',
-        'Diseño y desarrollo de integraciones entre la plataforma SaaS y sistemas ERP empresariales para clientes en industrias reguladas, incluyendo instituciones financieras líderes.',
+        'Diseño y desarrollo de integraciones entre la plataforma SaaS y sistemas ERP empresariales para clientes en industrias reguladas.',
         'Construcción de pipelines de integración de datos con Python y Pandas para transformación y sincronización entre plataformas empresariales.',
         'Desarrollo de APIs de integración con FastAPI y Pydantic, aplicando validación estricta de esquemas e integridad de datos requerida en entornos regulados.',
         'Automatización y orquestación de flujos de integración con Apache Airflow.',
@@ -132,7 +131,7 @@ export const experience: Experience[] = [
     current: false,
     bullets: {
       en: [
-        'Developed backend integrations and REST APIs in Python (Django, Flask) for top Panamanian banking institutions, meeting strict compliance and data security standards.',
+        'Developed backend integrations and REST APIs in Python (Django, Flask) for banking institutions, meeting strict compliance and data security standards.',
         'Automated operational workflows with Selenium and Python, including reporting and mailing pipelines.',
         'Implemented comprehensive test coverage with Pytest and Unittest — critical in banking environments where failures have regulatory implications.',
         'Designed microservices architecture and integrated SQL databases for modular, maintainable systems.',
@@ -140,7 +139,7 @@ export const experience: Experience[] = [
         'Utilized Git and Bitbucket following GitFlow practices, tracking progress with Jira in a Scrum framework.',
       ],
       es: [
-        'Desarrollo de integraciones backend y APIs REST en Python (Django, Flask) para importantes instituciones bancarias panameñas, cumpliendo estrictos estándares de cumplimiento y seguridad de datos.',
+        'Desarrollo de integraciones backend y APIs REST en Python (Django, Flask) para importantes instituciones bancarias, cumpliendo estrictos estándares de cumplimiento y seguridad de datos.',
         'Automatización de flujos operativos con Selenium y Python, incluyendo pipelines de reportes y correos.',
         'Implementación de cobertura de pruebas completa con Pytest y Unittest — crítica en entornos bancarios donde los fallos tienen implicaciones regulatorias.',
         'Diseño de arquitectura de microservicios e integración con bases de datos SQL.',
@@ -158,7 +157,7 @@ export const experience: Experience[] = [
     bullets: {
       en: [
         'Full-stack development using Python (Django, Flask) for backend and HTML/CSS/Bootstrap/JavaScript for frontend.',
-        'Built data integrations for leading Colombian banking institutions, handling sensitive financial data with strict validation and access controls.',
+        'Built data integrations for banking institutions, handling sensitive financial data with strict validation and access controls.',
         'Integrated multiple external APIs and managed SQL databases including PostgreSQL and Oracle.',
         'Implemented security and access control using JWT.',
         'Developed ETL processes, reporting, and mailing automation using Python and Pandas.',
@@ -166,7 +165,7 @@ export const experience: Experience[] = [
       ],
       es: [
         'Desarrollo full-stack con Python (Django, Flask) para backend y HTML/CSS/Bootstrap/JavaScript para frontend.',
-        'Construcción de integraciones de datos para importantes bancos colombianos, manejando datos financieros sensibles con validaciones estrictas y controles de acceso.',
+        'Construcción de integraciones de datos para bancos, manejando datos financieros sensibles con validaciones estrictas y controles de acceso.',
         'Integración con múltiples APIs externas y gestión de bases de datos SQL incluyendo PostgreSQL y Oracle.',
         'Implementación de seguridad y control de acceso con JWT.',
         'Desarrollo de procesos ETL, reportes y automatización de correos con Python y Pandas.',
