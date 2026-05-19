@@ -67,7 +67,7 @@ export const experience: Experience[] = [
   {
     company: 'Fracttal',
     role: { en: 'Integrations Python Developer', es: 'Desarrollador Python de Integraciones' },
-    type: 'Hybrid · Medellín',
+    type: 'Hybrid · Medellín, Colombia',
     period: { en: 'Dec 2025 – Present', es: 'Dic 2025 – Presente' },
     current: true,
     bullets: {
@@ -151,7 +151,7 @@ export const experience: Experience[] = [
   {
     company: 'Manpower',
     role: { en: 'Python Developer', es: 'Desarrollador Python' },
-    type: 'Colombia',
+    type: 'Remote · Colombia',
     period: { en: 'Jan 2023 – Aug 2023', es: 'Ene 2023 – Ago 2023' },
     current: false,
     bullets: {
@@ -176,7 +176,7 @@ export const experience: Experience[] = [
   {
     company: 'Konecta',
     role: { en: 'Chatbot Developer', es: 'Desarrollador de Chatbot' },
-    type: 'Colombia',
+    type: 'Remote · Colombia',
     period: { en: 'Jul 2022 – Feb 2023', es: 'Jul 2022 – Feb 2023' },
     current: false,
     bullets: {
@@ -199,7 +199,7 @@ export const experience: Experience[] = [
   {
     company: 'Corbeta / Alkosto',
     role: { en: 'Spare Parts Analyst', es: 'Analista de Repuestos' },
-    type: 'Colombia',
+    type: 'Medellín, Colombia',
     period: { en: 'Jun 2019 – Jul 2022', es: 'Jun 2019 – Jul 2022' },
     current: false,
     bullets: {
