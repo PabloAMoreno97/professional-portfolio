@@ -254,6 +254,18 @@ export const projects: Project[] = [
     github: 'https://github.com/PabloAMoreno97/etl-financial-pipeline',
     demo: 'https://etl-financial-api.onrender.com/docs',
   },
+  {
+    slug: 'etl-transport-pipeline',
+    title: 'NYC Taxi Transport Pipeline',
+    category: { en: 'Data Engineering', es: 'Ingeniería de Datos' },
+    description: {
+      en: 'Batch ETL pipeline that ingests monthly NYC Yellow Taxi trip data (Parquet), enriches it with geospatial zone data via GeoPandas, and loads aggregated metrics into PostgreSQL. Orchestrated with a Click CLI + GitHub Actions instead of Airflow. Includes an interactive Folium choropleth map and a FastAPI for zone and borough analytics.',
+      es: 'Pipeline ETL batch que ingesta datos mensuales de viajes en taxi de NYC (Parquet), los enriquece con datos geoespaciales de zonas vía GeoPandas y carga métricas agregadas en PostgreSQL. Orquestado con CLI Click + GitHub Actions en lugar de Airflow. Incluye un mapa coroplético interactivo con Folium y una FastAPI para consultar métricas por zona y borough.',
+    },
+    stack: ['Python', 'Pandas', 'GeoPandas', 'FastAPI', 'PostgreSQL', 'Parquet', 'Folium', 'Click', 'GitHub Actions', 'Docker', 'Neon', 'Render'],
+    github: 'https://github.com/PabloAMoreno97/etl-transport-pipeline',
+    demo: 'https://etl-transport-api.onrender.com/docs',
+  },
 ]
 
 export const education = [
