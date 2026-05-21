@@ -266,6 +266,17 @@ export const projects: Project[] = [
     github: 'https://github.com/PabloAMoreno97/etl-transport-pipeline',
     demo: 'https://etl-transport-api.onrender.com/docs',
   },
+  {
+    slug: 'fastapi-task-manager',
+    title: 'Task Manager API',
+    category: { en: 'Backend & APIs', es: 'Backend y APIs' },
+    description: {
+      en: 'Production-ready REST API for task management built with Clean Architecture (routers → services → repositories). Features JWT auth with refresh token rotation (tokens stored and revoked in PostgreSQL), async SQLAlchemy 2, Alembic migrations, and rate limiting on the login endpoint. 27 tests covering unit (security) and integration (auth + CRUD).',
+      es: 'API REST production-ready para gestión de tareas, construida con Clean Architecture (routers → services → repositories). Incluye autenticación JWT con rotación de refresh tokens (tokens almacenados y revocables en PostgreSQL), SQLAlchemy 2 asíncrono, migraciones con Alembic y rate limiting en el endpoint de login. 27 tests cubriendo unidad (seguridad) e integración (auth + CRUD).',
+    },
+    stack: ['Python', 'FastAPI', 'SQLAlchemy 2', 'Alembic', 'PostgreSQL', 'JWT', 'bcrypt', 'slowapi', 'Pytest', 'Docker', 'Neon', 'Render'],
+    github: 'https://github.com/PabloAMoreno97/fastapi-task-manager',
+  },
 ]
 
 export const education = [
