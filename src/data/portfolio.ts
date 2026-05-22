@@ -277,6 +277,39 @@ export const projects: Project[] = [
     stack: ['Python', 'FastAPI', 'SQLAlchemy 2', 'Alembic', 'PostgreSQL', 'JWT', 'bcrypt', 'slowapi', 'Pytest', 'Docker', 'Neon', 'Render'],
     github: 'https://github.com/PabloAMoreno97/fastapi-task-manager',
   },
+  {
+    slug: 'fastapi-async-jobs',
+    title: 'Async Jobs API',
+    category: { en: 'Backend & APIs', es: 'Backend y APIs' },
+    description: {
+      en: 'Event-driven REST API for asynchronous file processing. Users upload CSV/XLSX files; a Celery worker processes them in the background while progress events stream live to clients over WebSockets via Redis pub/sub. Demonstrates worker pattern, async/sync SQLAlchemy split, and Redis beyond caching.',
+      es: 'API REST event-driven para procesamiento asíncrono de archivos. Los usuarios suben CSV/XLSX; un worker Celery los procesa en background mientras los eventos de progreso se transmiten en vivo vía WebSockets sobre Redis pub/sub. Demuestra el patrón worker, separación async/sync de SQLAlchemy y Redis más allá de caché.',
+    },
+    stack: ['Python', 'FastAPI', 'Celery', 'Redis', 'WebSockets', 'SQLAlchemy 2', 'Alembic', 'PostgreSQL', 'Pandas', 'Pytest', 'Docker'],
+    github: 'https://github.com/PabloAMoreno97/fastapi-async-jobs',
+  },
+  {
+    slug: 'ml-sentiment-api',
+    title: 'Sentiment Analysis API',
+    category: { en: 'AI & Machine Learning', es: 'IA y Machine Learning' },
+    description: {
+      en: 'End-to-end NLP project: EDA, training (TF-IDF + Logistic Regression baseline, optional DistilBERT comparison), evaluation with classification report and confusion matrix, model serialization with joblib, and a FastAPI service exposing single and batch prediction endpoints. Reproducible from a committed sample dataset.',
+      es: 'Proyecto NLP end-to-end: EDA, entrenamiento (baseline TF-IDF + Regresión Logística, comparativa opcional con DistilBERT), evaluación con classification report y matriz de confusión, serialización del modelo con joblib y un servicio FastAPI que expone endpoints de predicción individual y por lotes. Reproducible desde un dataset de muestra incluido en el repo.',
+    },
+    stack: ['Python', 'scikit-learn', 'pandas', 'FastAPI', 'Pydantic', 'joblib', 'Jupyter', 'Pytest', 'Docker'],
+    github: 'https://github.com/PabloAMoreno97/ml-sentiment-api',
+  },
+  {
+    slug: 'ml-predictive-maintenance',
+    title: 'Predictive Maintenance (RUL)',
+    category: { en: 'AI & Machine Learning', es: 'IA y Machine Learning' },
+    description: {
+      en: 'Industrial ML on NASA CMAPSS turbofan sensor time-series: feature engineering with rolling stats and lag features, XGBoost regressor for Remaining Useful Life prediction, MLflow experiment tracking, SHAP explainability, and a FastAPI service serving predictions and feature attributions. Directly aligned with industrial maintenance workflows.',
+      es: 'ML industrial sobre series temporales de sensores de turbofans (NASA CMAPSS): ingeniería de features con estadísticos en ventana y lags, regresor XGBoost para predecir Remaining Useful Life, seguimiento de experimentos con MLflow, explicabilidad con SHAP y un servicio FastAPI que sirve predicciones y atribuciones de features. Alineado directamente con flujos de mantenimiento industrial.',
+    },
+    stack: ['Python', 'XGBoost', 'pandas', 'NumPy', 'MLflow', 'SHAP', 'FastAPI', 'Jupyter', 'Pytest', 'Docker'],
+    github: 'https://github.com/PabloAMoreno97/ml-predictive-maintenance',
+  },
 ]
 
 export const education = [
