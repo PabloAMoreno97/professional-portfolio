@@ -320,9 +320,9 @@ export const education = [
   {
     institution: 'Universidad Autónoma de Occidente',
     degree: { en: 'Specialization in Artificial Intelligence', es: 'Especialización en Inteligencia Artificial' },
-    period: '2025',
+    period: 'Jan 2025 – Dec 2025',
     location: 'Colombia',
-    current: true,
+    current: false,
   },
   {
     institution: 'Universidad EAFIT',
