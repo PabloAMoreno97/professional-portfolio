@@ -4,7 +4,7 @@ export const personalInfo = {
   name: 'Pablo Moreno',
   fullName: 'Pablo Andrés Moreno Álvarez',
   title: { en: 'Python Engineer', es: 'Ingeniero Python' },
-  subtitle: { en: 'Backend Developer · Data Engineering', es: 'Desarrollador Backend · Ingeniería de Datos' },
+  subtitle: { en: 'Backend Developer · Data Engineering · AI Agents', es: 'Desarrollador Backend · Ingeniería de Datos · Agentes IA' },
   location: 'Medellín, Colombia',
   openTo: { en: 'Open to Remote', es: 'Disponible para Remoto' },
   email: 'pablolm97@gmail.com',
@@ -12,8 +12,8 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/pablo-a-alvarez/',
   linkedinHandle: 'pablo-a-alvarez',
   summary: {
-    en: 'Python engineer with 6+ years of experience building backend services, data pipelines, and enterprise system integrations. Specialized in developing automation workflows and data synchronization between SaaS platforms and ERP systems. Extensive experience in regulated financial environments — delivering integrations for leading banks across Colombia, Panama, and Canada — where code quality, security, and data integrity are non-negotiable. Comfortable owning the full delivery cycle: from requirements gathering with clients to production deployment.',
-    es: 'Ingeniero Python con más de 6 años de experiencia construyendo servicios backend, pipelines de datos e integraciones de sistemas empresariales. Especializado en flujos de automatización y sincronización de datos entre plataformas SaaS y sistemas ERP. Amplia experiencia en entornos financieros regulados — entregando integraciones para bancos líderes en Colombia, Panamá y Canadá — donde la calidad del código, la seguridad y la integridad de los datos son innegociables. Cómodo gestionando el ciclo completo de entrega: desde la toma de requerimientos con clientes hasta el despliegue en producción.',
+    en: 'Python engineer with 6+ years building backend services, data pipelines, and enterprise ERP integrations. Currently at Fracttal operating in an AI-first paradigm — designing AI agents, integrating MCP servers, and acting as code architect with Claude Code to deliver production integrations at speed. Delivered solutions for leading banks in Colombia, Panama, and Canada where security and data integrity are non-negotiable. Comfortable owning the full delivery cycle: from client requirements to production deployment.',
+    es: 'Ingeniero Python con más de 6 años construyendo servicios backend, pipelines de datos e integraciones ERP empresariales. Actualmente en Fracttal con cultura AI-first — diseñando agentes IA, integrando servidores MCP y actuando como arquitecto de código con Claude Code para entregar integraciones de calidad a alta velocidad. Experiencia en entornos financieros regulados — integraciones para bancos líderes en Colombia, Panamá y Canadá — donde la seguridad e integridad de los datos son innegociables. Cómodo gestionando el ciclo completo: desde requerimientos del cliente hasta producción.',
   },
 }
 
@@ -72,24 +72,27 @@ export const experience: Experience[] = [
     current: true,
     bullets: {
       en: [
-        'Own the full integration delivery cycle: gather and translate client requirements into technical specifications, develop the solution, and deliver to production.',
-        'Act as the primary technical point of contact for clients during integration projects, ensuring clear communication and alignment throughout.',
+        'Own the full integration delivery cycle: gather client requirements, architect technical solutions with AI-assisted development, and deploy to production.',
+        'Act as primary technical point of contact for clients during integration projects, ensuring clear communication and alignment throughout.',
         'Design and develop integrations between the SaaS platform and enterprise ERP systems for clients in regulated industries.',
         'Build data integration pipelines using Python and Pandas for transformation and synchronization across enterprise platforms.',
-        'Develop integration APIs using FastAPI and Pydantic, applying strict schema validation and data integrity controls required by regulated environments.',
+        'Develop integration APIs using FastAPI and Pydantic, applying strict schema validation and data integrity controls.',
+        'Design and deploy AI agents using Claude API and MCP (Model Context Protocol) servers to automate and extend integration workflows.',
+        'Work within an AI-first engineering culture — acting as code architect using Claude Code to design, review, and deliver production-grade integrations at speed.',
         'Automate and orchestrate integration workflows using Apache Airflow.',
         'Integrate REST APIs, SQL databases, and structured files (CSV, Parquet) across heterogeneous systems.',
         'Deploy and operate services in containerized environments using Kubernetes.',
       ],
       es: [
-        'Gestión del ciclo completo de entrega de integraciones: toma de requerimientos con clientes, aterrizaje técnico, desarrollo y entrega a producción.',
+        'Gestión del ciclo completo de entrega: toma de requerimientos con clientes, diseño técnico asistido por IA y entrega a producción.',
         'Punto de contacto técnico principal con clientes durante proyectos de integración, asegurando comunicación clara y alineación en todo momento.',
         'Diseño y desarrollo de integraciones entre la plataforma SaaS y sistemas ERP empresariales para clientes en industrias reguladas.',
         'Construcción de pipelines de integración de datos con Python y Pandas para transformación y sincronización entre plataformas empresariales.',
-        'Desarrollo de APIs de integración con FastAPI y Pydantic, aplicando validación estricta de esquemas e integridad de datos requerida en entornos regulados.',
+        'Desarrollo de APIs de integración con FastAPI y Pydantic, aplicando validación estricta de esquemas e integridad de datos.',
+        'Diseño y despliegue de agentes IA usando la API de Claude y servidores MCP (Model Context Protocol) para automatizar y extender flujos de integración.',
+        'Trabajo en cultura de ingeniería AI-first — actuando como arquitecto de código con Claude Code para diseñar, revisar y entregar integraciones de calidad productiva a gran velocidad.',
         'Automatización y orquestación de flujos de integración con Apache Airflow.',
         'Integración con APIs REST, bases de datos SQL y archivos estructurados (CSV, Parquet) en sistemas heterogéneos.',
-        'Implementación de caché y almacenamiento intermedio con Redis para mayor confiabilidad de los pipelines.',
         'Despliegue y operación de servicios en entornos contenerizados con Kubernetes.',
       ],
     },
@@ -126,7 +129,7 @@ export const experience: Experience[] = [
   {
     company: 'PersonalSoft',
     role: { en: 'Senior Software Developer', es: 'Desarrollador de Software Senior' },
-    type: 'Remote · Panamá',
+    type: 'Remote · Colombia',
     period: { en: 'Aug 2023 – Mar 2024', es: 'Ago 2023 – Mar 2024' },
     current: false,
     bullets: {
@@ -181,14 +184,14 @@ export const experience: Experience[] = [
     current: false,
     bullets: {
       en: [
-        'Designed Python scripts to define and control chatbot behavior and conversation flows for financial sector clients.',
+        'Designed Python scripts to define and control chatbot behavior and conversation flows for a colombian lead bank.',
         'Connected SQL databases to Python for rapid and secure access to customer and product information.',
         'Applied data validation and access controls appropriate for financial-sector deployments.',
         'Conducted data analysis to improve chatbot performance and response quality.',
         'Monitored and tracked tasks with Azure DevOps within a Scrum framework.',
       ],
       es: [
-        'Diseño de scripts Python para definir y controlar el comportamiento y flujos de conversación del chatbot para clientes del sector financiero.',
+        'Diseño de scripts Python para definir y controlar el comportamiento y flujos de conversación del chatbot para un banco líder en Colombia.',
         'Conexión de bases de datos SQL a Python para acceso rápido y seguro a información de clientes y productos.',
         'Aplicación de validaciones de datos y controles de acceso apropiados para despliegues en el sector financiero.',
         'Análisis de datos para mejorar el rendimiento y calidad de respuestas del chatbot.',
@@ -225,6 +228,7 @@ export const skillGroups = [
   { label: { en: 'Languages',        es: 'Lenguajes'           }, skills: ['Python', 'SQL', 'JavaScript'] },
   { label: { en: 'Backend',          es: 'Backend'             }, skills: ['FastAPI', 'Flask', 'Django', 'REST APIs', 'Microservices'] },
   { label: { en: 'Data Engineering', es: 'Ingeniería de Datos' }, skills: ['Apache Airflow', 'Pandas', 'NumPy', 'SQLAlchemy', 'ETL Pipelines', 'Parquet'] },
+  { label: { en: 'AI & Agents',      es: 'IA y Agentes'        }, skills: ['Claude API', 'MCP', 'AI Agents', 'Claude Code', 'LLM Orchestration', 'Prompt Engineering'] },
   { label: { en: 'Databases',        es: 'Bases de Datos'      }, skills: ['PostgreSQL', 'MySQL', 'Oracle', 'SQL Server', 'MongoDB'] },
   { label: { en: 'Infrastructure',   es: 'Infraestructura'     }, skills: ['Docker', 'Kubernetes', 'Jenkins', 'CI/CD', 'Git', 'GitFlow'] },
   { label: { en: 'Cloud',            es: 'Nube'                }, skills: ['AWS Lambda', 'S3', 'API Gateway', 'DynamoDB', 'Boto3', 'Azure'] },
