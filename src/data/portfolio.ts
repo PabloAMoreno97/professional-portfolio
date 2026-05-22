@@ -107,7 +107,7 @@ export const experience: Experience[] = [
       en: [
         'Migrated legacy batch scripts to production-grade Python ETLs, integrating Apache Airflow to automate scheduling and eliminate manual intervention.',
         'Built and optimized ETL pipelines using Pandas, NumPy, and SQLAlchemy for efficient large-scale data processing and database interactions.',
-        'Delivered backend integrations for banking clients in Colombia and Canada, applying strict data validation, security controls, and audit-trail requirements in regulated environments.',
+        'Delivered backend integrations for a lead bank in Canada, applying strict data validation, security controls, and audit-trail requirements in regulated environments.',
         'Developed backend services with Flask; containerized deployments using Docker and Docker Compose for consistent, portable environments.',
         'Managed CI/CD pipelines with Jenkins and integrated AWS services (Lambda, S3, DynamoDB) into data workflows using Boto3.',
         'Maintained code quality through GitFlow practices and active participation in code reviews on GitHub.',
@@ -115,7 +115,7 @@ export const experience: Experience[] = [
       es: [
         'Migré scripts batch legacy a ETLs Python de calidad productiva, integrando Apache Airflow para automatizar la orquestación y eliminar intervención manual.',
         'Construí y optimicé pipelines ETL con Pandas, NumPy y SQLAlchemy para procesamiento eficiente de grandes volúmenes de datos.',
-        'Entregué integraciones backend para clientes bancarios en Colombia y Canadá, aplicando validación estricta de datos, controles de seguridad y trazabilidad de auditoría en entornos regulados.',
+        'Entregué integraciones backend para un banco líder en Canadá, aplicando validación estricta de datos, controles de seguridad y trazabilidad de auditoría en entornos regulados.',
         'Desarrollé servicios backend con Flask; contenerización con Docker y Docker Compose para despliegues reproducibles.',
         'Gestioné pipelines CI/CD con Jenkins; integré AWS (Lambda, S3, DynamoDB) vía Boto3; GitFlow en GitHub.',
       ],
