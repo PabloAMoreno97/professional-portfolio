@@ -12,8 +12,8 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/pablo-a-alvarez/',
   linkedinHandle: 'pablo-a-alvarez',
   summary: {
-    en: 'Python engineer with 6+ years building backend services, data pipelines, and enterprise ERP integrations. Currently at Fracttal operating in an AI-first paradigm — designing AI agents, integrating MCP servers, and acting as code architect with Claude Code to deliver production integrations at speed. Delivered solutions for leading banks in Colombia, Panama, and Canada where security and data integrity are non-negotiable. Comfortable owning the full delivery cycle: from client requirements to production deployment.',
-    es: 'Ingeniero Python con más de 6 años construyendo servicios backend, pipelines de datos e integraciones ERP empresariales. Actualmente en Fracttal con cultura AI-first — diseñando agentes IA, integrando servidores MCP y actuando como arquitecto de código con Claude Code para entregar integraciones de calidad a alta velocidad. Experiencia en entornos financieros regulados — integraciones para bancos líderes en Colombia, Panamá y Canadá — donde la seguridad e integridad de los datos son innegociables. Cómodo gestionando el ciclo completo: desde requerimientos del cliente hasta producción.',
+    en: 'Python engineer with 6+ years building backend services, data pipelines, and enterprise ERP integrations. Currently building ETL systems and cloud-native data pipelines (AWS, Snowflake) for a US-based real estate technology platform. Previously at Fracttal, operating in an AI-first paradigm — designing AI agents, integrating MCP servers, and acting as code architect with Claude Code to deliver production integrations at speed. Delivered solutions for leading banks in Colombia, Panama, and Canada where security and data integrity are non-negotiable. Comfortable owning the full delivery cycle: from client requirements to production deployment.',
+    es: 'Ingeniero Python con más de 6 años construyendo servicios backend, pipelines de datos e integraciones ERP empresariales. Actualmente construyendo sistemas ETL y pipelines de datos cloud-native (AWS, Snowflake) para una plataforma tecnológica de real estate en Estados Unidos. Previamente en Fracttal con cultura AI-first — diseñando agentes IA, integrando servidores MCP y actuando como arquitecto de código con Claude Code para entregar integraciones de calidad a alta velocidad. Experiencia en entornos financieros regulados — integraciones para bancos líderes en Colombia, Panamá y Canadá — donde la seguridad e integridad de los datos son innegociables. Cómodo gestionando el ciclo completo: desde requerimientos del cliente hasta producción.',
   },
 }
 
@@ -65,11 +65,36 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
+    company: 'Real Estate Tech Platform (NDA)',
+    role: { en: 'Python Engineer — ETL & Data Integrations', es: 'Ingeniero Python — ETL e Integraciones de Datos' },
+    type: 'Remote · United States',
+    period: { en: 'Jun 2026 – Present', es: 'Jun 2026 – Presente' },
+    current: true,
+    bullets: {
+      en: [
+        'Own the ETL system connecting a real estate SaaS platform with multiple third-party data providers, covering both new integration builds and ongoing maintenance of existing ones.',
+        'Design and operate cloud-native data pipelines on AWS (ECS, Lambda, EventBridge, Chalice, ECR) to ingest, transform, and synchronize real estate data at scale.',
+        'Own data integrity in MySQL for records ingested through the ETL pipelines, ensuring consistency for downstream consumers.',
+        'Configure and schedule containerized batch jobs (ECS Task Definitions) via EventBridge to automate integration workflows end-to-end.',
+        'Translate business requirements into technical specifications and independently handle validation, implementation, and production rollout — including provider migrations and cutover logic for existing data relationships.',
+        'Contribute to big data workflows feeding a Snowflake-based data platform.',
+      ],
+      es: [
+        'Responsable del sistema ETL que conecta una plataforma SaaS de real estate con múltiples proveedores de datos externos, tanto en la construcción de nuevas integraciones como en el mantenimiento de las existentes.',
+        'Diseño y opero pipelines de datos cloud-native en AWS (ECS, Lambda, EventBridge, Chalice, ECR) para ingestar, transformar y sincronizar datos de real estate a escala.',
+        'Responsable de la integridad de datos en MySQL para los registros ingresados a través de los pipelines ETL, garantizando consistencia para los consumidores downstream.',
+        'Configuro y programo trabajos batch contenerizados (Task Definitions de ECS) vía EventBridge para automatizar flujos de integración de punta a punta.',
+        'Traduzco requerimientos de negocio en especificaciones técnicas, gestionando de forma independiente la validación, implementación y salida a producción — incluyendo migraciones de proveedores y lógica de corte para relaciones de datos existentes.',
+        'Contribuyo a flujos de big data que alimentan una plataforma de datos basada en Snowflake.',
+      ],
+    },
+  },
+  {
     company: 'Fracttal',
     role: { en: 'Integrations Python Developer', es: 'Desarrollador Python de Integraciones' },
     type: 'Hybrid · Medellín, Colombia',
-    period: { en: 'Dec 2025 – Present', es: 'Dic 2025 – Presente' },
-    current: true,
+    period: { en: 'Dec 2025 – Jun 2026', es: 'Dic 2025 – Jun 2026' },
+    current: false,
     bullets: {
       en: [
         'Own the full integration delivery cycle: gather client requirements, architect technical solutions with AI-assisted development, and deploy to production.',
@@ -214,11 +239,11 @@ export const experience: Experience[] = [
 export const skillGroups = [
   { label: { en: 'Languages',        es: 'Lenguajes'           }, skills: ['Python', 'SQL', 'JavaScript'] },
   { label: { en: 'Backend',          es: 'Backend'             }, skills: ['FastAPI', 'Flask', 'Django', 'REST APIs', 'Microservices'] },
-  { label: { en: 'Data Engineering', es: 'Ingeniería de Datos' }, skills: ['Apache Airflow', 'Pandas', 'NumPy', 'SQLAlchemy', 'ETL Pipelines', 'Parquet'] },
+  { label: { en: 'Data Engineering', es: 'Ingeniería de Datos' }, skills: ['Apache Airflow', 'Pandas', 'NumPy', 'SQLAlchemy', 'ETL Pipelines', 'Parquet', 'Snowflake'] },
   { label: { en: 'AI & Agents',      es: 'IA y Agentes'        }, skills: ['Claude API', 'MCP', 'AI Agents', 'Claude Code', 'LLM Orchestration', 'Prompt Engineering'] },
   { label: { en: 'Databases',        es: 'Bases de Datos'      }, skills: ['PostgreSQL', 'MySQL', 'Oracle', 'SQL Server', 'MongoDB'] },
   { label: { en: 'Infrastructure',   es: 'Infraestructura'     }, skills: ['Docker', 'Kubernetes', 'Jenkins', 'CI/CD', 'Git', 'GitFlow'] },
-  { label: { en: 'Cloud',            es: 'Nube'                }, skills: ['AWS Lambda', 'S3', 'API Gateway', 'DynamoDB', 'Boto3', 'Azure'] },
+  { label: { en: 'Cloud',            es: 'Nube'                }, skills: ['AWS Lambda', 'ECS', 'EventBridge', 'Chalice', 'S3', 'API Gateway', 'DynamoDB', 'Boto3', 'Azure'] },
   { label: { en: 'Tools',            es: 'Herramientas'        }, skills: ['Redis', 'Postman', 'Linux', 'Jira', 'Pytest', 'Selenium', 'JWT'] },
 ]
 
