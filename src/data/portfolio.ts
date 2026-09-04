@@ -78,6 +78,9 @@ export const experience: Experience[] = [
         'Configure and schedule containerized batch jobs (ECS Task Definitions) via EventBridge to automate integration workflows end-to-end.',
         'Translate business requirements into technical specifications and independently handle validation, implementation, and production rollout — including provider migrations and cutover logic for existing data relationships.',
         'Contribute to big data workflows feeding a Snowflake-based data platform.',
+        'Drive Python development with Claude Code, from integration builds to production fixes.',
+        'Build custom Claude skills (following agentskills.io practices) for on-demand support analysis and diagnostics, cutting troubleshooting time.',
+        'Design a suite of AI agents tailored to the codebase and data architecture — from schema-aware querying without exposing underlying data, to automated code review, improvement suggestions, and troubleshooting.',
       ],
       es: [
         'Responsable del sistema ETL que conecta una plataforma SaaS de real estate con múltiples proveedores de datos externos, tanto en la construcción de nuevas integraciones como en el mantenimiento de las existentes.',
@@ -86,6 +89,9 @@ export const experience: Experience[] = [
         'Configuro y programo trabajos batch contenerizados (Task Definitions de ECS) vía EventBridge para automatizar flujos de integración de punta a punta.',
         'Traduzco requerimientos de negocio en especificaciones técnicas, gestionando de forma independiente la validación, implementación y salida a producción — incluyendo migraciones de proveedores y lógica de corte para relaciones de datos existentes.',
         'Contribuyo a flujos de big data que alimentan una plataforma de datos basada en Snowflake.',
+        'Impulso el desarrollo en Python con Claude Code, desde la construcción de integraciones hasta fixes en producción.',
+        'Construyo skills personalizadas de Claude (siguiendo prácticas de agentskills.io) para análisis de soporte puntuales y diagnóstico, reduciendo el tiempo de troubleshooting.',
+        'Diseño una suite de agentes IA adaptados a la arquitectura del código y los datos — desde consultas conscientes del esquema sin exponer datos subyacentes, hasta revisión automatizada de código, sugerencias de mejora y troubleshooting.',
       ],
     },
   },
@@ -149,7 +155,7 @@ export const experience: Experience[] = [
   {
     company: 'PersonalSoft',
     role: { en: 'Senior Software Developer', es: 'Desarrollador de Software Senior' },
-    type: 'Remote · Colombia',
+    type: 'Remote · Panama',
     period: { en: 'Aug 2023 – Mar 2024', es: 'Ago 2023 – Mar 2024' },
     current: false,
     bullets: {
